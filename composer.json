@@ -1,0 +1,41 @@
+{
+    "name": "psc-acme/loader-inventory",
+    "description": "Package loader-inventory for psc-acme organization",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\LoaderInventory\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.3",
+        "doctrine/dbal": "^4.0",
+        "symfony/cache": "^7.0",
+        "webmozart/assert": "^1.0",
+        "nette/utils": "^4.0",
+        "symfony/validator": "^7.0",
+        "firebase/php-jwt": "^6.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.6",
+        "phpunit/phpunit": "^11.0"
+    },
+    "minimum-stability": "dev",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
